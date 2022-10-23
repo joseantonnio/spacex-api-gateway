@@ -35,12 +35,18 @@ gem 'bootsnap', require: false
 # Simple, but flexible HTTP client library, with support for multiple backends
 gem 'faraday', '~> 2.6.0'
 
+# Pretty print your Ruby objects with style -- in full color and with proper indentation
+gem 'awesome_print', '~> 1.9.0'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri mingw x64_mingw]
 
   # Brings the RSpec testing framework to Ruby on Rails as a drop-in alternative to its default testing framework
   gem 'rspec-rails', '~> 6.0.0'
+
+  # A Ruby gem to load environment variables from .env
+  gem 'dotenv-rails', '~> 2.8.0'
 end
 
 group :development do
