@@ -10,12 +10,12 @@ Alternatively, the [Ruby SpaceX API](https://github.com/victorperez/spacex-api-r
 
 ## Launches
 
-| Endpoint | Description                    | Status |
-|----------|--------------------------------|--------|
-| Upcoming | Show the upcoming launch       | TO DO  |
-| Last     | Show the last launch           | TO DO  |
-| Next     | List all the next launches     | TO DO  |
-| Previous | List all the previous launches | TO DO  |
+| Endpoint | Description                    | Status      |
+|----------|--------------------------------|-------------|
+| Upcoming | Show the upcoming launch       | IMPLEMENTED |
+| Last     | Show the last launch           | IMPLEMENTED |
+| Next     | List all the next launches     | IMPLEMENTED |
+| Previous | List all the previous launches | IMPLEMENTED |
 
 ### Data
 
