@@ -11,6 +11,4 @@ Rails.application.routes.draw do
   resource :next_launches, only: [] do
     get :upcoming
   end
-
-  root nil
 end

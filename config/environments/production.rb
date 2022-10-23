@@ -79,4 +79,9 @@ Rails.application.configure do
     logger.formatter = config.log_formatter
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
+
+  # Add application domain to hosts
+  config.hosts = [
+    "spacex-launches-api-gateway.up.railway.app"
+  ]
 end
