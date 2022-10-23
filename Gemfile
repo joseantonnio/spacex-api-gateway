@@ -30,6 +30,9 @@ gem "bootsnap", require: false
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem "rack-cors"
 
+# Simple, but flexible HTTP client library, with support for multiple backends
+gem "faraday", '~> 2.6.0'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
@@ -38,5 +41,17 @@ end
 group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+
+  # Brings the RSpec testing framework to Ruby on Rails as a drop-in alternative to its default testing framework
+  gem 'rspec-rails', '~> 6.0.0'
+
+  # A Ruby static code analyzer and formatter, based on the community Ruby style guide
+  gem 'rubocop', '~> 1.37', require: false
+
+  # A RuboCop extension focused on enforcing Rails best practices and coding conventions
+  gem 'rubocop-rails', '~> 2.17.0', require: false
+
+  # Code style checking for RSpec files
+  gem 'rubocop-rspec', '~> 2.13.0', require: false
 end
 
