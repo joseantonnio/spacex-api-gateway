@@ -41,6 +41,7 @@ module SpacexApiGateway
 
     # Load additional folders
     config.eager_load_paths << Rails.root.join('app/entities')
+    config.eager_load_paths << Rails.root.join('app/gateways')
     config.eager_load_paths << Rails.root.join('lib')
   end
 end
