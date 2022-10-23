@@ -38,14 +38,14 @@ gem 'faraday', '~> 2.6.0'
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri mingw x64_mingw]
+
+  # Brings the RSpec testing framework to Ruby on Rails as a drop-in alternative to its default testing framework
+  gem 'rspec-rails', '~> 6.0.0'
 end
 
 group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
-
-  # Brings the RSpec testing framework to Ruby on Rails as a drop-in alternative to its default testing framework
-  gem 'rspec-rails', '~> 6.0.0'
 
   # A Ruby static code analyzer and formatter, based on the community Ruby style guide
   gem 'rubocop', '~> 1.37', require: false
