@@ -2,21 +2,58 @@
 
 # SpaceX API Gateway
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This API Gateway uses [SpaceX API](https://github.com/r-spacex/SpaceX-API) to get the SpaceX upcoming, last, next, and previous rocket launches.
 
-Things you may want to cover:
+Alternatively, the [Ruby SpaceX API](https://github.com/victorperez/spacex-api-ruby) gem could be used in this project. But this project's objective is to present a complete implementation.
 
-* Ruby version
+# Features
 
-* System dependencies
+## Launches
 
-* Configuration
+| Endpoint | Description                    | Status |
+|----------|--------------------------------|--------|
+| Upcoming | Show the upcoming launch       | TO DO  |
+| Last     | Show the last launch           | TO DO  |
+| Next     | List all the next launches     | TO DO  |
+| Previous | List all the previous launches | TO DO  |
 
-* How to run the test suite
+### Data
 
-* Services (job queues, cache servers, search engines, etc.)
+Array of OpenStruct or a OpenStruct\
+├── Name\
+├── Description\
+├── Patch\
+├── Liftoff\
+├── Vehicle\
+│   ├── Name\
+│   └── Image\
+└── Launchpad\
+    └── Name
 
-* Deployment instructions
+# Information
+
+## Ruby version
+
+Ruby 3.1.2 is used in this project. You can also see this information in the `.ruby-version` file.
+
+## Configuration
+
+Install [Ruby Version Manager (RVM)](https://rvm.io/) following your current operational system tutorial also available in RVM docs.
+
+Be sure that you're using the correct ruby and gemset via RVM and run `bundle install` to configure your environment.
+
+## Development
+
+You can run this project locally using `rails serve -p PORT`, changing `PORT` by an unused port from 0 to 65536.
+
+Run `bundle exec dotenv -t .env` when you add, remove or edit environment variables. Never commit your `.env` files!
+
+## Deployment instructions
+
+This project is configured to auto-deploy to Railway when a new commit is added to the main branch.
+
+You can access the production project at this link: https://spacex-launches.up.railway.app/
+
+---
 
 © 2022 Space Exploration Technologies Corporation. SpaceX and SpaceX logo are trademarks and/or registered trademarks of Space Exploration Technologies Corporation in the US and/or other countries.

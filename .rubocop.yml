@@ -1,0 +1,10 @@
+require:
+  - rubocop-rails
+  - rubocop-rspec
+
+AllCops:
+  NewCops: enable
+
+Style/OpenStructUse:
+  Exclude:
+    - lib/spacex/connection.rb
