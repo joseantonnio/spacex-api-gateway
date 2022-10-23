@@ -1,8 +1,16 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  resources :previous_launches, only: [:index]
+  resources :next_launches, only: [:index]
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  resource :previous_launches, only: [] do
+    get :latest
+  end
+
+  resource :next_launches, only: [] do
+    get :upcoming
+  end
+
+  root nil
 end
