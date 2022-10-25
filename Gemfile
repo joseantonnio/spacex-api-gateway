@@ -38,6 +38,9 @@ gem 'faraday', '~> 2.6.0'
 # Pretty print your Ruby objects with style -- in full color and with proper indentation
 gem 'awesome_print', '~> 1.9.0'
 
+# Rack Middleware for handling Cross-Origin Resource Sharing (CORS), which makes cross-origin AJAX possible
+gem 'rack-cors', '~> 1.1.0'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri mingw x64_mingw]
