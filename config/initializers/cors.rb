@@ -8,8 +8,8 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins "localhost:3001" if Rails.env.development?
-    origins "spacex-launches.up.railway.app" if Rails.env.production?
+    origins "http://localhost:3001" if Rails.env.development?
+    origins "https://spacex-launches.up.railway.app" if Rails.env.production?
 
     resource "*",
       headers: :any,
